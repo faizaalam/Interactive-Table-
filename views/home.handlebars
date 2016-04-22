@@ -34,7 +34,7 @@
         }
 
         .container {
-         max-width: 600px;
+        max-width: 600px;
          margin: 20% auto;
          height: 400px;
          text-align: center;
@@ -201,14 +201,14 @@
   <body>
 
      <div class="wrapper">
-	<div class="container">
-		<h1>Welcome</h1>
+       <div class="container">
+     		<h1>Welcome</h1>
 
-		<form class="form">
-			<button type="submit" id="login-button-first">Tiger</button>
-   			<button type="submit" id="login-button-second">Real estate</button>
-		</form>
-	</div>
+     		<form class="form">
+     			<button type="submit" id="login-button-first">Tiger</button>
+        			<button type="submit" id="login-button-second">Real estate</button>
+     		</form>
+     	</div>
 
 	<ul class="bg-bubbles">
 		<li></li>
@@ -241,6 +241,8 @@ e=n.propHooks[b]),void 0!==c?e&&"set"in e&&void 0!==(d=e.set(a,c,b))?d:a[b]=c:e&
     if (e.keyCode == 65) {
        $( "#login-button-first" ).css( "background", "#ed4525" );
      $( "#login-button-first" ).css( "color", "#fff" );
+     url = "/tiger";
+     $( location ).attr("href", url);
     }
   });
 
@@ -248,8 +250,26 @@ e=n.propHooks[b]),void 0!==c?e&&"set"in e&&void 0!==(d=e.set(a,c,b))?d:a[b]=c:e&
     if (e.keyCode == 66) {
        $( "#login-button-second" ).css( "background", "#ed4525" );
       $( "#login-button-second" ).css( "color", "#fff" );
+      url = "/real-estate";
+      $( location ).attr("href", url);
     }
   });
+
+//     $(document).ready(function() {
+// $( ".home-div.one" ).mouseover(function() {
+//          $( "#login-button-first" ).css( "background", "#ed4525" );
+//        $( "#login-button-first" ).css( "color", "#fff" );
+//        url = "/tiger";
+//        $( location ).attr("href", url);
+//       }
+// $( ".home-div.two" ).mouseover(function() {
+//       $( "#login-button-second" ).css( "background", "#ed4525" );
+//      $( "#login-button-second" ).css( "color", "#fff" );
+//      url = "/real-estate";
+//      $( location ).attr("href", url);
+//    }
+//     });
+
 
 
 </script>
